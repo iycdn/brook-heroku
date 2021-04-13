@@ -3,13 +3,21 @@
     "description": "Set up a Brook wss server on Heroku.",
     "keywords": ["brook"],
     "env": {
-        "PASSWORD": {
-            "description": "Password (default: password)",
+        "password": {
+            "description": "The password (default: password)",
             "value": "password"
         },
-        "Ws_Path": {
-            "description": "Path (default: /ws)",
+        "ws_path": {
+            "description": "The ws path (default: /ws)",
             "value": "/ws"
+        },
+        "url_redir": {
+            "description": "The website you want to redirect to (default: github.com/txthinking/brook)",
+            "value": "github.com/txthinking/brook"
+        },
+        "app_name": {
+            "description": "The app name, used to generate a Brook link and a QR code (default: skip)",
+            "value": "skip"
         }
     },
     "website": "https://github.com/McDull-GitHub",

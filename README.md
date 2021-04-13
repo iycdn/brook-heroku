@@ -14,6 +14,14 @@ Server:   wss://[app-name].herokuapp.com:443[/ws]
 Password: [password]
 ```
 
+```
+Available only if app_name is specified
+只有指定了app_name才可用，否則404 Not Found
+
+QR code:    https://[app-name].herokuapp.com:443/[password]/qr.png
+Brook link: https://[app-name].herokuapp.com:443/[password]/link.txt
+```
+
 ======================================================================
 
 #### Cloudflare workers 加速，把第四行的[app-name]改成自己的 / (Recommend if you are in China)
@@ -42,4 +50,4 @@ Password: [password]
 ======================================================================
 
 ### Logs / 事件紀錄檔
-`heroku logs --tail -a`
+`heroku logs --tail -a [app-name]`

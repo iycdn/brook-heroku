@@ -3,7 +3,7 @@ FROM debian:sid
 RUN set -ex\
     && apt update -y \
     && apt upgrade -y \
-    && apt install -y wget nginx \
+    && apt install -y wget nginx qrencode\
     && apt autoremove -y
 
 COPY build.sh /build.sh
