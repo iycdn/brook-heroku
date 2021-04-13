@@ -6,7 +6,7 @@ brook_latest="https://github.com/txthinking/brook/releases/download/$ver/brook_l
 wget --no-check-certificate $brook_latest
 chmod +x brook_linux_amd64
 
-./brook_linux_amd64 wsserver -l :12345 -p $PASSWORD &
+./brook_linux_amd64 wsserver -l :12345 --path ${Ws_Path} -p $PASSWORD &
 
 [[ -z "${Ws_Path}" ]] && Ws_Path="/ws"
 
