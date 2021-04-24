@@ -2,7 +2,7 @@
 - [Sign up](https://signup.heroku.com/) if you don't have one.
 - 如果沒有heroku的就先去[註冊](https://signup.heroku.com/) 
 
-#### Deploy / 一鍵部署
+#### Deploy / 部署
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 #### Usage / 用法
