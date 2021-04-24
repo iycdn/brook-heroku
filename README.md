@@ -1,6 +1,6 @@
 #### Sign up / 註冊
 - [Sign up](https://signup.heroku.com/) if you don't have one.
-- 如果沒有heroku帳號就先[註冊](https://signup.heroku.com/) 
+- 如果沒有heroku的就先去[註冊](https://signup.heroku.com/) 
 
 #### Deploy / 一鍵部署
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
@@ -8,7 +8,7 @@
 #### Usage / 用法
 ```
 Brook wss: replace [app-name], [/ws] and [password]
-記得把 [app-name] 還有 [xxx] 還有 [password] 換成自己的
+要把 [app-name] 和 [xxx] 和 [password] 改成自己的
 
 Server:   wss://[app-name].herokuapp.com:443[/ws]
 Password: [password]
@@ -16,7 +16,7 @@ Password: [password]
 
 ```
 Available only if app_name is specified
-只有指定了app_name才可用，否則404 Not Found
+只有指定了app_name才可用，不然404 Not Found
 
 QR code:    https://[app-name].herokuapp.com:443/[password]/qr.png
 Brook link: https://[app-name].herokuapp.com:443/[password]/link.txt
