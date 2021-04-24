@@ -25,7 +25,7 @@ Brook link: https://[app-name].herokuapp.com:443/[password]/link.txt
 ======================================================================
 
 #### Cloudflare workers 加速，把第四行的[app-name]改成自己的 / (Recommend if you are in China)
-cloudflare workers
+[cloudflare workers](https://dash.cloudflare.com/)
 ```
 addEventListener(
   'fetch',event => {
