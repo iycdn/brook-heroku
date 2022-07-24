@@ -12,17 +12,6 @@ chmod +x brook_linux_amd64
 
 [[ -z "${url_redir}" ]] && url_redir="github.com/txthinking/brook"
 
-if [[ "${app_name}" != "skip" ]]; then
-    # generate a Brook link and a QR code
-    mkdir /root/$password
-    brook_link=$(./brook_linux_amd64 link -s wss://${app_name}.herokuapp.com:443${ws_path} -p $password | tr -d "\n")
-    echo -n "${brook_link}" >/root/$password/link.txt
-    echo -n "${brook_link}" | qrencode -s 6 -o /root/$password/qr.png
-    echo -n "The Brook link is ${brook_link}"
-else
-    echo "skip generating"
-fi
-
 cat >/etc/nginx/conf.d/brook.conf <<EOF
 server {
     listen       ${PORT};
