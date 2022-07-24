@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ver=$(wget -qO- "https://api.github.com/repos/txthinking/brook/releases/latest" | sed -n -r -e 's/.*"tag_name".+?"([vV0-9\.]+?)".*/\1/p')
-[[ -z "${ver}" ]]
+[[ -z "${ver}" ]] && ver="v20210401"
 brook_latest="https://github.com/txthinking/brook/releases/download/$ver/brook_linux_amd64"
 wget --no-check-certificate $brook_latest
 chmod +x brook_linux_amd64
